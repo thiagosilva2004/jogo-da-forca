@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css do boostrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css" media="screen">
+    <title>Jogo da Forca</title>
+</head>
+<body>
+    <div class="container">
+        <div id="imagem">
+
+        </div>
+        <div id="palavraSecreta">
+            <!-- 
+            <div class="letras">A</div>
+            <div class="letras">A</div>
+            -->
+        </div>
+        <div id="teclado">
+            <div class="teclas">
+                <button id="tecla-A" onclick="VerificarLetraEscolhida('a')">A</button>
+                <button id="tecla-B" onclick="VerificarLetraEscolhida('b')">B</button>
+                <button id="tecla-C" onclick="VerificarLetraEscolhida('c')">C</button>
+                <button id="tecla-D" onclick="VerificarLetraEscolhida('d')">D</button>
+                <button id="tecla-E" onclick="VerificarLetraEscolhida('e')">E</button>
+                <button id="tecla-F" onclick="VerificarLetraEscolhida('f')">F</button>
+                <button id="tecla-G" onclick="VerificarLetraEscolhida('g')">G</button>
+                <button id="tecla-H" onclick="VerificarLetraEscolhida('h')">H</button>
+                <button id="tecla-I" onclick="VerificarLetraEscolhida('i')">I</button>
+            </div>
+            <div class="teclas">
+                <button id="tecla-J" onclick="VerificarLetraEscolhida('j')">J</button>
+                <button id="tecla-K" onclick="VerificarLetraEscolhida('k')">K</button>
+                <button id="tecla-L" onclick="VerificarLetraEscolhida('l')">L</button>
+                <button id="tecla-M" onclick="VerificarLetraEscolhida('m')">M</button>
+                <button id="tecla-N" onclick="VerificarLetraEscolhida('n')">N</button>
+                <button id="tecla-O" onclick="VerificarLetraEscolhida('o')">O</button>
+                <button id="tecla-P" onclick="VerificarLetraEscolhida('p')">P</button>
+                <button id="tecla-Q" onclick="VerificarLetraEscolhida('q')">Q</button>
+                <button id="tecla-R" onclick="VerificarLetraEscolhida('r')">R</button>
+            </div>
+            <div class="teclas">
+                <button id="tecla-S" onclick="VerificarLetraEscolhida('s')">S</button>
+                <button id="tecla-T" onclick="VerificarLetraEscolhida('t')">T</button>
+                <button id="tecla-U" onclick="VerificarLetraEscolhida('u')">U</button>
+                <button id="tecla-V" onclick="VerificarLetraEscolhida('v')">V</button>
+                <button id="tecla-W" onclick="VerificarLetraEscolhida('w')">W</button>
+                <button id="tecla-X" onclick="VerificarLetraEscolhida('x')">X</button>
+                <button id="tecla-Y" onclick="VerificarLetraEscolhida('y')">Y</button>
+                <button id="tecla-Z" onclick="VerificarLetraEscolhida('z')">Z</button>
+                <button id="tecla-#" onclick="Resart()">🎮</button>
+            </div>
+        </div>
+        <div id="categoria">
+            CATEGORIA
+        </div>
+        <!-- inicio modal -->
+        <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body" id="modal-body"></div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        <!-- fim modal -->
+    </div>
+
+    <!-- scripts do boostrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
